@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookShelf Apps</title>
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+</head>
+
+<body>
+
+    <header>
+        <h2 class="text-tittle">WEB PENYIMPAN DATA BUKU</h2>
+    </header>
+    <main>
+        <div id="content">
+            <article>
+                <div class="card">
+                    <div class="card-header">
+                        <h3 class="text-tittle">Masukkan buku</h3>
+                    </div>
+                    <div class="card-body">
+                        <form id="book-form">
+                            <div class="col">
+                                <label for="book-tittle"> Judul</label>
+                                <input type="text" id="book-title">
+                                <input type="hidden" id="id" value="">
+                            </div>
+                            <div class="col">
+                                <label for="author">Penulis</label>
+                                <input type="text" id="author" value="">
+                            </div>
+                            <div class="col">
+                                <label for="year"> Tahun </label>
+                                <input type="text" id="year" class="" value="">
+                            </div>
+                            <div class="col">
+                                <label for="IsRead" class="IsRead">Sudah Dibaca</label>
+                                <input type="checkbox" id="IsRead" value="">
+                            </div>
+                            <div class="col">
+                                <input class="btn" type="submit" id="submit">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">
+                        <h3>Sudah Dibaca</h3>
+                    </div>
+                    <div class="card-body">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Judul</th>
+                                    <th>Penulis</th>
+                                    <th>Tahun</th>
+                                    <th>Edit</th>
+                                </tr>
+                            </thead>
+                            <tbody id="read">
+
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <!-- card2 -->
+                <div class="card">
+                    <div class="card-header">
+                        <h3>Belum Dibaca</h3>
+                    </div>
+                    <div class="card-body">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Judul</th>
+                                    <th>Penulis</th>
+                                    <th>Tahun</th>
+                                    <th>Edit</th>
+                                </tr>
+                            </thead>
+                            <tbody id="unread">
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </article>
+            <aside>
+                <div class="searchbox">
+                    <div class="card">
+                        <div class="card-header">
+                            <h3>Cari Buku</h3>
+                        </div>
+                        <div class="card-body">
+                            <form action="" id="search-box">
+                                <div class="flex-row">
+                                    <input type="text" placeholder="cari Judul" id="search-input">
+                                </div>
+                                <div class="search-btn">
+                                    <button type="submit" value="submit" id="search-btn">Cari</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+        </div>
+    </main>
+    <footer>
+        <p>copyright &copy; 2022 ~ Fajar Febriansyah</p>
+    </footer>
+    <script src="assets/script.js"></script>
+</body>
+
+</html>
